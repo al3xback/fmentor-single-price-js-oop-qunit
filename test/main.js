@@ -15,15 +15,15 @@ QUnit.module('DOM', (hooks) => {
 
 	test("should be able to create element via 'Component' class method", (assert) => {
 		const component = new Component();
-		const markEl = component.createElement(
-			'mark',
+		const subtitleEl = component.createElement(
+			'p',
 			'highlight',
 			'Lorem ipsum'
 		);
-		document.body.appendChild(markEl);
+		document.body.appendChild(subtitleEl);
 
-		const isMarkElExist = !!document.querySelector('.highlight');
-		assert.ok(isMarkElExist);
+		const issubtitleElExist = !!document.querySelector('.highlight');
+		assert.ok(issubtitleElExist);
 	});
 
 	test("should be able to return element attribute data via 'Component' class method", (assert) => {
