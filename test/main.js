@@ -22,8 +22,8 @@ QUnit.module('DOM', (hooks) => {
 		);
 		document.body.appendChild(subtitleEl);
 
-		const issubtitleElExist = !!document.querySelector('.highlight');
-		assert.ok(issubtitleElExist);
+		const isSubtitleElExist = !!document.querySelector('.highlight');
+		assert.ok(isSubtitleElExist);
 	});
 
 	test("should be able to return element attribute data via 'Component' class method", (assert) => {
